@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "parcel": "^2.15.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

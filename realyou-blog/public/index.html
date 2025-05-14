@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>RealYou Blog</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <h1>RealYou Blog</h1>
+
+  <form id="postForm">
+    <input type="text" id="title" placeholder="Titolo" required />
+    <textarea id="content" placeholder="Scrivi qualcosa..." required></textarea>
+    <button type="submit">Pubblica</button>
+  </form>
+
+  <div id="postsContainer"></div>
+
+  <!-- Template Handlebars -->
+  <script id="post-template" type="text/x-handlebars-template">
+    <div class="post">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+    </div>
+  </script>
+
+  <script src="./main.js"></script>
+</body>
+</html>
