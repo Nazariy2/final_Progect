@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spatium</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/facts.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/community.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1 fs-4 text-white" href="./index.html"
+            >Spatium</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./facts.html">Facts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./community.html"
+                  >Community</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+       <div class="container-fluid py-5">
+    <h2 class="text-center mb-4 text-white">🪐 Community Blog</h2>
+
+    <!-- Create Post Form -->
+    <form class="form bg-dark p-4 rounded mb-4" id="createForm">
+      <div class="mb-3">
+        <label for="title" class="form-label text-white">Post Title</label>
+        <input class="form-control bg-dark text-white" id="title" type="text" placeholder="Enter title" required />
+      </div>
+      <div class="mb-3">
+        <label for="author" class="form-label text-white">Author</label>
+        <input class="form-control bg-dark text-white" id="author" type="text" placeholder="Your name" required />
+      </div>
+      <div class="mb-3">
+        <label for="mainContent" class="form-label text-white">Content</label>
+        <textarea class="form-control bg-dark text-white" id="mainContent" rows="3" placeholder="Write something..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-light">Publish</button>
+    </form>
+
+    <!-- Blog Posts List -->
+    <ul class="list-group blogList mb-5"></ul>
+
+    <!-- Update Post Form (initially hidden) -->
+     <form class="update bg-dark p-4 rounded mb-5 d-none">
+  <label for="mainContent" class="text-white form-label">Edit Content</label>
+  <input class="form_input form-control mb-2 bg-dark text-white" id="mainContent" type="text" />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+   
+
+    <!-- ISS Live Data -->
+    <section class="bg-dark p-4 rounded text-center text-white">
+      <h4>🌍 Current Position of the International Space Station</h4>
+      <p id="iss-data">Loading data...</p>
+    </section>
+  </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/takeData.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/deletePost.js"></script>
+    <script src="./src/js/updatePost.js"></script>
+    <script src="./src/js/bootstrap.js"></script>
+    <script src="./src/js/api.js"></script>
+  </body>
 </html>
