@@ -1,18 +1,16 @@
-
-
-.container {
+.container-fluid {
     background-image: url("../img/nightsky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-   
 }
 .my-5 {
-    /* background-image: url("../img/nightsky.jpg");
+    /* padding: 0;
+    background-image: url("../img/nightsky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; */
 }
+
 .text-white {
 }
 .text-center {
@@ -23,6 +21,7 @@
 }
 .col-md-4 {
 }
+
 .mb-3 {
 }
 .p-3 {
@@ -30,6 +29,12 @@
 .bg-dark {
 }
 .rounded {
+    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+.rounded:hover {
+    box-shadow: 0 0 10px 2px #ececec;
+    border-color: #ececec;
 }
 .shadow {
 }
