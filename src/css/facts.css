@@ -1,14 +1,13 @@
 .container-fluid {
+    padding-bottom: 250px;
     background-image: url("../img/nightsky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+.pt-5{
+    padding-bottom: 250px;
+}
 .my-5 {
-    /* padding: 0;
-    background-image: url("../img/nightsky.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh; */
 }
 
 .text-white {
