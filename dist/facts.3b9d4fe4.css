@@ -1,2 +1,37 @@
 
+
+.container {
+    background-image: url("/nightsky.b75cf6c0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+.my-5 {
+    /* background-image: url("../img/nightsky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; */
+}
+.text-white {
+}
+.text-center {
+}
+.mb-4 {
+}
+.row {
+}
+.col-md-4 {
+}
+.mb-3 {
+}
+.p-3 {
+}
+.bg-dark {
+}
+.rounded {
+}
+.shadow {
+}
+
 /*# sourceMappingURL=/facts.3b9d4fe4.css.map */
