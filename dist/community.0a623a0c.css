@@ -2,4 +2,30 @@ main{
     background-image: url("/nightsky.b75cf6c0.jpg");
 }
 
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card-title {
+  font-size: 1.1rem;
+}
+
+
+.col-md-6 {
+border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.col-md-6:hover{
+    transform: scale(1.02);
+}
+
 /*# sourceMappingURL=/community.0a623a0c.css.map */

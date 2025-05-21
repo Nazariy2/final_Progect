@@ -41,43 +41,61 @@
       </nav>
     </header>
     <main>
-       <div class="container-fluid py-5">
-    <h2 class="text-center mb-4 text-white">🪐 Community Blog</h2>
+      <div class="container-fluid py-5">
+        <section class="community container my-5">
+          <h1 class="text-white text-center mb-4">🛰️ Community</h1>
+          <p class="text-white text-center mb-4">Latest news about space!</p>
 
-    <!-- Create Post Form -->
-    <form class="form bg-dark p-4 rounded mb-4" id="createForm">
-      <div class="mb-3">
-        <label for="title" class="form-label text-white">Post Title</label>
-        <input class="form-control bg-dark text-white" id="title" type="text" placeholder="Enter title" required="">
+          <input type="text" id="searchInput" class="form-control mb-4" placeholder="Cerca articoli spaziali...">
+
+          <div id="postsContainer" class="row g-4"></div>
+
+          <div class="text-center mt-4">
+            <button id="loadMoreBtn" class="btn btn-primary">
+              Load more
+            </button>
+            <button id="showLessBtn" class="btn btn-secondary ms-2" style="display: none">
+              Show less
+            </button>
+            <div id="spinner" class="spinner-border text-primary ms-3" role="status" style="display: none">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Create Post Form -->
+        <form class="form bg-dark p-4 rounded mb-4" id="createForm">
+          <div class="mb-3">
+            <label for="title" class="form-label text-white">Post Title</label>
+            <input class="form-control bg-dark text-white" id="title" type="text" placeholder="Enter title" required="">
+          </div>
+          <div class="mb-3">
+            <label for="author" class="form-label text-white">Author</label>
+            <input class="form-control bg-dark text-white" id="author" type="text" placeholder="Your name" required="">
+          </div>
+          <div class="mb-3">
+            <label for="mainContent" class="form-label text-white">Content</label>
+            <textarea class="form-control bg-dark text-white" id="mainContent" rows="3" placeholder="Write something..." required=""></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-light">Publish</button>
+        </form>
+
+        <!-- Blog Posts List -->
+        <ul class="list-group blogList mb-5"></ul>
+
+        <!-- Update Post Form (initially hidden) -->
+        <form class="update bg-dark p-4 rounded mb-5 d-none">
+          <label for="mainContent" class="text-white form-label">Edit Content</label>
+          <input class="form_input form-control mb-2 bg-dark text-white" id="mainContent" type="text">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- ISS Live Data -->
+        <section class="bg-dark p-4 rounded text-center text-white">
+          <h4>🌍 Current Position of the International Space Station</h4>
+          <p id="iss-data">Loading data...</p>
+        </section>
       </div>
-      <div class="mb-3">
-        <label for="author" class="form-label text-white">Author</label>
-        <input class="form-control bg-dark text-white" id="author" type="text" placeholder="Your name" required="">
-      </div>
-      <div class="mb-3">
-        <label for="mainContent" class="form-label text-white">Content</label>
-        <textarea class="form-control bg-dark text-white" id="mainContent" rows="3" placeholder="Write something..." required=""></textarea>
-      </div>
-      <button type="submit" class="btn btn-outline-light">Publish</button>
-    </form>
-
-    <!-- Blog Posts List -->
-    <ul class="list-group blogList mb-5"></ul>
-
-    <!-- Update Post Form (initially hidden) -->
-     <form class="update bg-dark p-4 rounded mb-5 d-none">
-  <label for="mainContent" class="text-white form-label">Edit Content</label>
-  <input class="form_input form-control mb-2 bg-dark text-white" id="mainContent" type="text">
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-   
-
-    <!-- ISS Live Data -->
-    <section class="bg-dark p-4 rounded text-center text-white">
-      <h4>🌍 Current Position of the International Space Station</h4>
-      <p id="iss-data">Loading data...</p>
-    </section>
-  </div>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
