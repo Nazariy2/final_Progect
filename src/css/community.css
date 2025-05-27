@@ -27,3 +27,12 @@ border-radius: 1rem;
 .col-md-6:hover{
     transform: scale(1.02);
 }
+
+/* responsive */
+
+@media (max-width: 991.98px) {
+  body{
+    overflow-x:  hidden;
+  }
+  
+}

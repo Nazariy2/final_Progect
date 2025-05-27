@@ -28,4 +28,13 @@ border-radius: 1rem;
     transform: scale(1.02);
 }
 
+/* responsive */
+
+@media (max-width: 991.98px) {
+  body{
+    overflow-x:  hidden;
+  }
+  
+}
+
 /*# sourceMappingURL=/community.0a623a0c.css.map */

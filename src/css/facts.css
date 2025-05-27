@@ -39,3 +39,11 @@
 }
 
 
+/* responsive */
+
+@media (max-width: 991.98px) {
+  body{
+    overflow-x:  hidden;
+  }
+  
+}
